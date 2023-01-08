@@ -1,0 +1,35 @@
+hostname master
+    2  exit
+    3  sudo amazon-linux-extras install java-openjdk11 -y
+    4  sudo amazon-linux-extras install java-openjdk11 -y
+    5  yum install maven git tree -y
+    6  ssh-keygen -t rsa
+    7  vi /etc/ssh/sshd_config
+    8  systemctl restart sshd
+    9  su jenkins
+   10  useradd jenkins
+   11  passwd jenkins
+   12  su jenkins
+   13  ssh-copy-id jenkins@54.173.149.133
+   14  ssh-copy-id jenkins@54.173.149.133
+   15  history
+   16  vi /etc/ssh/sshd_config
+   17  ls -ld
+   18  ls -ld authorized_keys
+   19  ssh-copy-id jenkins@54.173.149.133
+   20  sudo wget -o /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+   21   sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+   22  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+   23  sudo yum -y install jenkins
+   24  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+   25  sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key 
+   26  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat-stable/jenkins.repo
+   27  sudo rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
+   28  sudo yum install jenkins
+   29  apt update
+   30  sudo apt-get update
+   31  sudo yum -y install jenkins
+   32  echo "--------jenkins,java installed"
+   33  sudo systemctl enable jenkins
+   34  sudo systemctl start jenkins
+   35  cat /var/lib/jenkins/secrets/initialAdminPassword
