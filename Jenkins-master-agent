@@ -32,4 +32,12 @@ hostname master
    32  echo "--------jenkins,java installed"
    33  sudo systemctl enable jenkins
    34  sudo systemctl start jenkins
-   35  cat /var/lib/jenkins/secrets/initialAdminPassword
+   35  cat /var/lib/jenkins/secrets/initialAdminPasswordls /root/.ssh/
+   38  cat /root/.ssh/known_hosts
+   39  cp /root/.ssh/known_hosts /home/jenkins/.ssh/known_hosts
+   40  cp /root/.ssh/known_hosts /home/jenkins/.ssh/known_hosts
+   41  cd /home/jenkins/
+   42  ls
+   43  pwd
+   44  ls
+   
